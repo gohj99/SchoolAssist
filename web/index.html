@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半自动志愿填报</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* 向顶部对齐 */
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .content-container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #school, #is-finalist, #order, #counter-order, #best-school-score, #run-time, #loading-status {
+            margin: 10px 0; /* 调整间距 */
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            font-size: 1.2em; /* 调整字体大小 */
+            text-align: center; /* 居中对齐 */
+        }
+        #loading-status {
+            color: #888;
+            font-size: 1em;
+        }
+        .button-container {
+            margin: 10px 0; /* 调整间距 */
+            text-align: center; /* 居中对齐 */
+        }
+        .button-container button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            width: 100%;
+            position: fixed; /* 固定在页面底部 */
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="school">当前学校：Loading...</div>
+    <div id="is-finalist">入围情况：Loading...</div>
+    <div id="order">当前排名：Loading...</div>
+    <div id="counter-order">倒数排名：Loading...</div>
+    <div id="best-school-score">你指定的学校最低等级：Loading...</div>
+    <div id="run-time">当前数据采集时间：Loading...</div>
+    <div id="loading-status">Loading data...</div>
+    <div class="button-container">
+        <button id="button7">点我去三十三中</button>
+        <button id="button1">点我去西附</button>
+        <button id="button2">点我去八中</button>
+        <button id="button3">点我去三十六中(衡阳校区)</button>
+        <button id="button4">点我去三十六中(江南校区)</button>
+        <button id="button5">点我去沛鸿中学</button>
+        <button id="button8">点我去十四中</button>
+        <button id="button6">点我去一中</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 获取当前域名
+            const baseUrl = window.location.origin;
+
+            // 构建请求 URL
+            const url = `${baseUrl}/api/?endpoint=get_rwqk`;
+
+            // 定义获取数据的函数
+            function fetchData() {
+                // 显示加载状态
+                const loadingStatusDiv = document.getElementById('loading-status');
+                loadingStatusDiv.textContent = 'Loading data...';
+
+                // 使用 fetch API 获取 JSON 数据
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 获取 school, is_finalist, order, counter_order 和 runTime 项
+                        const school = data.school;
+                        const isFinalist = data.is_finalist;
+                        const order = data.order;
+                        const counterOrder = data.counter_order;
+                        const runTime = data.runTime;
+                        const bestSchoolScore = data.best_school_score;
+
+                        // 显示 is_finalist, school, order, counter_order 和 runTime 的值
+                        const isFinalistDiv = document.getElementById('is-finalist');
+                        isFinalistDiv.textContent = `入围情况：${isFinalist}`;
+                        const schoolDiv = document.getElementById('school');
+                        schoolDiv.textContent = `当前学校：${school}`;
+
+                        const orderDiv = document.getElementById('order');
+                        orderDiv.textContent = `当前排名：${order}`;
+
+                        const counterOrderDiv = document.getElementById('counter-order');
+                        counterOrderDiv.textContent = `倒数排名：${counterOrder}`;
+
+                        const bestSchoolScoreDiv = document.getElementById('best-school-score');
+                        bestSchoolScoreDiv.textContent = `三十六中(衡阳校区)等级：${bestSchoolScore}`;
+
+                        const runTimeDiv = document.getElementById('run-time');
+                        runTimeDiv.textContent = `当前数据采集时间：${runTime}`;
+
+                        // 更新加载状态
+                        loadingStatusDiv.textContent = 'Data loaded successfully';
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        const schoolDiv = document.getElementById('school');
+                        schoolDiv.textContent = `当前学校：Error`;
+                        const isFinalistDiv = document.getElementById('is-finalist');
+                        isFinalistDiv.textContent = '入围情况：Error';
+                        const orderDiv = document.getElementById('order');
+                        orderDiv.textContent = '当前排名：Error';
+                        const counterOrderDiv = document.getElementById('counter-order');
+                        counterOrderDiv.textContent = '倒数排名：Error';
+                        const bestSchoolScoreDiv = document.getElementById('best-school-score');
+                        bestSchoolScoreDiv.textContent = '你指定的学校最低等级：Error';
+                        const runTimeDiv = document.getElementById('run-time');
+                        runTimeDiv.textContent = '当前数据采集时间：Error';
+                        loadingStatusDiv.textContent = 'Error loading data';
+                    });
+            }
+
+            // 初次获取数据
+            fetchData();
+
+            // 每秒重复获取数据
+            setInterval(fetchData, 500);
+
+            // 通用的按钮点击处理函数
+            function handleButtonClick(schoolId) {
+                // 请求 /api/?endpoint=check_school_finalist/{schoolId}
+                fetch(`${baseUrl}/api/?endpoint=check_school_finalist/${schoolId}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('网络响应不正常');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const counterOrder = data.counter_order;
+                        const mainSchoolScore = data.main_school_score;
+
+                        // 根据 counter_order 弹出提示
+                        let message;
+                        if (counterOrder <= 1) {
+                            message = `目标学校最低等级为${mainSchoolScore}\n很可能无法入围`;
+                        } else {
+                            message = `目标学校最低等级为${mainSchoolScore}\n注意：入围后倒数排名可能为${counterOrder}，请谨慎选择`;
+                        }
+
+                        // 弹出确认对话框
+                        if (confirm(message)) {
+                            // 用户点击了确定，请求 /api/?endpoint=set_school/{schoolId}
+                            fetch(`${baseUrl}/api/?endpoint=set_school/${schoolId}`)
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('网络响应不正常');
+                                    }
+                                    return response.json();
+                                })
+                                .then(data => {
+                                    // 输出返回的数据
+                                    console.log('学校设置成功:', data);
+
+                                    // 弹出确定提示框，中文提示
+                                    alert(`学校设置成功\n${JSON.stringify(data, null, 2)}`);
+                                })
+                                .catch(error => {
+                                    console.error('获取过程中出现问题:', error);
+
+                                    // 无论请求是否成功，都弹出确定提示框
+                                    alert('学校设置失败');
+                                });
+                        } else {
+                            // 用户点击了取消
+                            console.log('用户取消了操作');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('获取过程中出现问题:', error);
+                    });
+            }
+
+            // 监听滚动事件
+            window.addEventListener('scroll', function() {
+                const footer = document.getElementById('footer');
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const footerHeight = footer.offsetHeight;
+                const documentHeight = document.body.offsetHeight;
+
+                // 确保页脚始终在页面底部
+                if (scrollPosition >= documentHeight - footerHeight) {
+                    footer.style.position = 'absolute';
+                    footer.style.bottom = '0';
+                } else {
+                    footer.style.position = 'fixed';
+                    footer.style.bottom = '0';
+                }
+            });
+
+            // 按钮事件监听器
+            document.getElementById('button1').addEventListener('click', function() {
+                handleButtonClick(2063); // 2063是西附的 ID
+            });
+
+            document.getElementById('button2').addEventListener('click', function() {
+                handleButtonClick(2008); // 2008是八中的 ID
+            });
+
+            document.getElementById('button3').addEventListener('click', function() {
+                handleButtonClick(2036); // 2036是三十六中(衡阳校区)的 ID
+            });
+
+            document.getElementById('button4').addEventListener('click', function() {
+                handleButtonClick(8081); // 8081是三十六中(江南校区)的 ID
+            });
+
+            document.getElementById('button5').addEventListener('click', function() {
+                handleButtonClick(2091); // 2091是沛鸿中学的 ID
+            });
+
+            document.getElementById('button6').addEventListener('click', function() {
+                handleButtonClick(2001); // 2001是一中的 ID
+            });
+
+            document.getElementById('button7').addEventListener('click', function() {
+                handleButtonClick(2033); // 2033是三十三中的 ID
+            });
+
+            document.getElementById('button8').addEventListener('click', function() {
+                handleButtonClick(2014); // 2014是十四中的 ID
+            });
+        });
+    </script>
+    <footer>
+        SchoolAssist  Copyright &copy; 2024 gohj99
+    </footer>
+</body>
+</html>

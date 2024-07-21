@@ -1,0 +1,497 @@
+[
+    {
+        "SchoolCode": "2001",
+        "SchoolName": "南宁市第一中学(五象校区)",
+        "SignupNum": "926",
+        "InstNum": "812",
+        "GuideNum": "926",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2002",
+        "SchoolName": "南宁市第二中学(凤岭校区)",
+        "SignupNum": "2014",
+        "InstNum": "1847",
+        "GuideNum": "2014",
+        "Status": "5",
+        "StatusName": "停止报名，正在录取"
+    },
+    {
+        "SchoolCode": "2003",
+        "SchoolName": "南宁市第三中学(青山校区)",
+        "SignupNum": "1447",
+        "InstNum": "1348",
+        "GuideNum": "1447",
+        "Status": "5",
+        "StatusName": "停止报名，正在录取"
+    },
+    {
+        "SchoolCode": "7949",
+        "SchoolName": "南宁市第三中学(五象校区)",
+        "SignupNum": "4191",
+        "InstNum": "3871",
+        "GuideNum": "4191",
+        "Status": "5",
+        "StatusName": "停止报名，正在录取"
+    },
+    {
+        "SchoolCode": "2004",
+        "SchoolName": "南宁市第四中学(五象凤凰校区)",
+        "SignupNum": "908",
+        "InstNum": "800",
+        "GuideNum": "908",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2005",
+        "SchoolName": "南宁市第五中学(第一档)",
+        "SignupNum": "260",
+        "InstNum": "209",
+        "GuideNum": "260",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2008",
+        "SchoolName": "南宁市第八中学(相思湖校区)",
+        "SignupNum": "969",
+        "InstNum": "856",
+        "GuideNum": "969",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2009",
+        "SchoolName": "南宁市第九中学",
+        "SignupNum": "693",
+        "InstNum": "599",
+        "GuideNum": "693",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2010",
+        "SchoolName": "南宁市第十中学(上津校区)",
+        "SignupNum": "790",
+        "InstNum": "679",
+        "GuideNum": "790",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2083",
+        "SchoolName": "南宁外国语学校",
+        "SignupNum": "786",
+        "InstNum": "684",
+        "GuideNum": "786",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2013",
+        "SchoolName": "南宁市第十三中学",
+        "SignupNum": "442",
+        "InstNum": "356",
+        "GuideNum": "442",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2014",
+        "SchoolName": "南宁市第十四中学(高中部)",
+        "SignupNum": "867",
+        "InstNum": "760",
+        "GuideNum": "867",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7647",
+        "SchoolName": "南宁市第十五中学",
+        "SignupNum": "505",
+        "InstNum": "414",
+        "GuideNum": "505",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2091",
+        "SchoolName": "南宁沛鸿民族中学(江南校区)",
+        "SignupNum": "729",
+        "InstNum": "640",
+        "GuideNum": "729",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2019",
+        "SchoolName": "南宁市第十九中学",
+        "SignupNum": "515",
+        "InstNum": "442",
+        "GuideNum": "515",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2020",
+        "SchoolName": "南宁市第二十中学",
+        "SignupNum": "660",
+        "InstNum": "568",
+        "GuideNum": "660",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2021",
+        "SchoolName": "南宁市第二十一中学",
+        "SignupNum": "552",
+        "InstNum": "455",
+        "GuideNum": "552",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2024",
+        "SchoolName": "南宁市第二十四中学",
+        "SignupNum": "656",
+        "InstNum": "557",
+        "GuideNum": "656",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2026",
+        "SchoolName": "南宁市第二十六中学(五象校区)",
+        "SignupNum": "755",
+        "InstNum": "661",
+        "GuideNum": "755",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2028",
+        "SchoolName": "南宁市第二十八中学",
+        "SignupNum": "474",
+        "InstNum": "375",
+        "GuideNum": "474",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2029",
+        "SchoolName": "南宁市第二十九中学",
+        "SignupNum": "420",
+        "InstNum": "267",
+        "GuideNum": "420",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2033",
+        "SchoolName": "南宁市第三十三中学",
+        "SignupNum": "800",
+        "InstNum": "714",
+        "GuideNum": "800",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2034",
+        "SchoolName": "南宁市第三十四中学",
+        "SignupNum": "454",
+        "InstNum": "374",
+        "GuideNum": "454",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2036",
+        "SchoolName": "南宁市第三十六中学(衡阳校区)",
+        "SignupNum": "686",
+        "InstNum": "607",
+        "GuideNum": "686",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8081",
+        "SchoolName": "南宁市第三十六中学(江南校区)",
+        "SignupNum": "941",
+        "InstNum": "830",
+        "GuideNum": "941",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2099",
+        "SchoolName": "南宁市邕宁高级中学",
+        "SignupNum": "1087",
+        "InstNum": "978",
+        "GuideNum": "1087",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2114",
+        "SchoolName": "南宁市第四十一中学",
+        "SignupNum": "673",
+        "InstNum": "547",
+        "GuideNum": "673",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2100",
+        "SchoolName": "南宁市第四十二中学",
+        "SignupNum": "637",
+        "InstNum": "517",
+        "GuideNum": "637",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2101",
+        "SchoolName": "南宁市第四十三中学",
+        "SignupNum": "738",
+        "InstNum": "631",
+        "GuideNum": "738",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8021",
+        "SchoolName": "南宁市新民中学(高中部)",
+        "SignupNum": "274",
+        "InstNum": "237",
+        "GuideNum": "274",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7579",
+        "SchoolName": "广西民族高中",
+        "SignupNum": "350",
+        "InstNum": "294",
+        "GuideNum": "350",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2112",
+        "SchoolName": "南宁市第五十六中学",
+        "SignupNum": "495",
+        "InstNum": "364",
+        "GuideNum": "495",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2097",
+        "SchoolName": "南宁市江南区江西中学",
+        "SignupNum": "379",
+        "InstNum": "247",
+        "GuideNum": "379",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2113",
+        "SchoolName": "南宁市江南区苏圩中学",
+        "SignupNum": "357",
+        "InstNum": "184",
+        "GuideNum": "357",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2063",
+        "SchoolName": "广西大学附属中学(民办)",
+        "SignupNum": "718",
+        "InstNum": "0",
+        "GuideNum": "718",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2086",
+        "SchoolName": "南宁市英华学校(民办)(第一档)",
+        "SignupNum": "301",
+        "InstNum": "0",
+        "GuideNum": "301",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2080",
+        "SchoolName": "南宁北附实验学校(民办)",
+        "SignupNum": "175",
+        "InstNum": "0",
+        "GuideNum": "175",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2030",
+        "SchoolName": "南宁市育才实验中学(民办)",
+        "SignupNum": "126",
+        "InstNum": "0",
+        "GuideNum": "126",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8022",
+        "SchoolName": "南宁市银海三雅学校(民办)",
+        "SignupNum": "275",
+        "InstNum": "0",
+        "GuideNum": "275",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2092",
+        "SchoolName": "南宁市华侨实验高中(民办)",
+        "SignupNum": "163",
+        "InstNum": "0",
+        "GuideNum": "163",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2093",
+        "SchoolName": "南宁市华光高级中学(民办)",
+        "SignupNum": "108",
+        "InstNum": "0",
+        "GuideNum": "108",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2087",
+        "SchoolName": "南宁市东方外语高级中学(民办)",
+        "SignupNum": "291",
+        "InstNum": "0",
+        "GuideNum": "291",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2089",
+        "SchoolName": "南宁市爱华学校(民办)",
+        "SignupNum": "128",
+        "InstNum": "0",
+        "GuideNum": "128",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7879",
+        "SchoolName": "南宁市龙翔荆楚高级中学(民办)",
+        "SignupNum": "74",
+        "InstNum": "0",
+        "GuideNum": "74",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7911",
+        "SchoolName": "南宁市宏德高级中学(民办)",
+        "SignupNum": "318",
+        "InstNum": "0",
+        "GuideNum": "318",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7967",
+        "SchoolName": "南宁市中南中学(民办)",
+        "SignupNum": "29",
+        "InstNum": "0",
+        "GuideNum": "29",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8083",
+        "SchoolName": "南宁市桂华高级中学(民办)",
+        "SignupNum": "107",
+        "InstNum": "0",
+        "GuideNum": "107",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8105",
+        "SchoolName": "南宁市天泽高级中学(民办)",
+        "SignupNum": "36",
+        "InstNum": "0",
+        "GuideNum": "36",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8135",
+        "SchoolName": "南宁市央美附属高级中学(民办)",
+        "SignupNum": "64",
+        "InstNum": "0",
+        "GuideNum": "64",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8125",
+        "SchoolName": "南宁哈罗礼德高级中学(民办)",
+        "SignupNum": "10",
+        "InstNum": "0",
+        "GuideNum": "10",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2109",
+        "SchoolName": "南宁市琼林高级中学(民办)",
+        "SignupNum": "550",
+        "InstNum": "0",
+        "GuideNum": "550",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8056",
+        "SchoolName": "南宁高新技术产业开发区桂鼎学校(民办)",
+        "SignupNum": "139",
+        "InstNum": "0",
+        "GuideNum": "139",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "8087",
+        "SchoolName": "南宁市大家育才未来高级中学(民办)",
+        "SignupNum": "234",
+        "InstNum": "0",
+        "GuideNum": "234",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "2094",
+        "SchoolName": "广西希望高中(民办)",
+        "SignupNum": "72",
+        "InstNum": "0",
+        "GuideNum": "72",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    },
+    {
+        "SchoolCode": "7908",
+        "SchoolName": "南宁市东盟中学(民办)",
+        "SignupNum": "238",
+        "InstNum": "0",
+        "GuideNum": "238",
+        "Status": "3",
+        "StatusName": "暂停报名"
+    }
+]
